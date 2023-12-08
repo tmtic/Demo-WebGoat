@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Run Codacy Analysis CLI
-        uses: codacy/codacy-analisis-action@master
+        uses: codacy/codacy-analisis-cli-action@master
         with:
           api-token: ${{ secrets.CODACY_API_TOKEN }}
           output: results.sarif
